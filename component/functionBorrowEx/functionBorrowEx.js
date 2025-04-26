@@ -1,3 +1,5 @@
+//We can set this manually to borrow the funtions
+
 let Person = {
   name: "Kishor",
   age: 30,

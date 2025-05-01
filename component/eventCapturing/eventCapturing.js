@@ -6,11 +6,16 @@ document.getElementById("parent").addEventListener(
   "click",
   (event) => {
     console.log("parent");
-    event.stopImmediatePropagation();
   },
   true
 );
 
+document.getElementById("child").addEventListener("click", (event) => {
+  console.log("child 1");
+  //event.stopPropagation()
+  event.stopImmediatePropagation();
+});
+
 document.getElementById("child").addEventListener("click", () => {
-  console.log("child");
+  console.log("child 2");
 });

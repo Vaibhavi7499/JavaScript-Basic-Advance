@@ -4,7 +4,7 @@ let Person = {
   name: "xyz",
   age: 20,
 
-  accessDetails: function () {
+  accessDetails(){
     console.log(`My name is ${this.name} & age is ${this.age}`);
   },
 };
@@ -19,10 +19,43 @@ class Car {
     this.model = model;
   }
 
-  drive = function () {
+  drive() {
     console.log(`car color is ${this.color} & model is ${this.model}`);
   };
 }
 
 let c = new Car("white", "tata-punch");
 console.log(c.drive());
+
+/**
+ * 3
+ * using new keyword 
+ */
+
+function Person(name,age) {
+  this.name = name,
+  this.age = age
+}
+
+Person.prototype.getDetails = function() {
+console.log(`my name is ${this.name} and i am ${this.age} years old`)
+}
+
+let p = new Person('John',30)
+
+console.log(p.getDetails())
+
+
+/**
+ * Object.create(objName)
+ */
+
+let obj = {
+  name : 'john',
+  age : 35
+}
+
+
+let newObj = Object.create(obj)
+
+

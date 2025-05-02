@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      .block1 {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: azure;
+        border: 1px solid black;
+      }
+      .block2 {
+        display:inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: aliceblue;
+        border: 1px solid black;
+      }
+      .block3 {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: blanchedalmond;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
     <div id="parent">
-        <button id="child">Click me!</button>
+      <!-- <button id="child">Click me!</button> -->
+      <div class="block1">block 1</div>
+      <div class="block2">block 2</div>
+      <div class="block3">block 3</div>
     </div>
     <!-- <script src="VariableEx.js"></script> -->
-    <script src="async/await/asyncAwaitEx.js"></script>
-</body>
+    <!-- <script src="async/await/asyncAwaitEx.js"></script> -->
+  </body>
 </html>

@@ -13,6 +13,9 @@ console.log(b);
 console.log(a);
 
 const obj3 = JSON.parse(JSON.stringify(obj1));
+JSON.parse(JSON.stringify(obj)) //(for simple objects)
+
+structuredClone(obj) //(modern, safer)
 
 /* Shallow copy means reference variable is copied into new reference variable
  using assignment operator , shallow copy of the reference variable is created

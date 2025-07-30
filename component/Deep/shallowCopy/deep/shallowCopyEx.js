@@ -12,6 +12,8 @@ b.city = "Pune";
 console.log(b);
 console.log(a);
 
+const obj3 = JSON.parse(JSON.stringify(obj1));
+
 /* Shallow copy means reference variable is copied into new reference variable
  using assignment operator , shallow copy of the reference variable is created
  Both old and new reference variable is point to the same object in memory */
